@@ -127,7 +127,7 @@ function SocialLinks() {
 const footerLinks: { href: string; text: string; tooltip: React.ReactNode }[] =
   [
     {
-      href: 'https://github.com/theodorusclarence/theodorusclarence.com',
+      href: 'https://github.com/SemmiDev/theodorusclarence.com',
       text: 'Source Code',
       tooltip: (
         <>

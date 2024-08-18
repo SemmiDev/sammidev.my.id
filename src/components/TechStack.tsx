@@ -6,7 +6,24 @@ import {
   SiReact,
   SiReactquery,
   SiTailwindcss,
-  SiTypescript,
+  SiGo,
+  SiRedis,
+  SiMysql,
+  SiMongodb,
+  SiDocker,
+  SiVuedotjs,
+  SiNuxtdotjs,
+  SiLaravel,
+  SiSpringboot,
+  SiAnsible,
+  SiPrometheus,
+  SiGrafana,
+  SiJaeger,
+  SiOpentelemetry,
+  SiLinux,
+  SiGitlab,
+  SiGithub,
+  SiElasticsearch,
 } from 'react-icons/si';
 
 import CustomLink from '@/components/links/CustomLink';
@@ -14,7 +31,7 @@ import Tooltip from '@/components/Tooltip';
 
 export default function TechStack() {
   return (
-    <div className='flex space-x-2 md:space-x-4'>
+    <div className='flex flex-wrap gap-3 '>
       {stacks.map((tech) => (
         <Tooltip key={tech.id} tipChildren={<p>{tech.tooltip}</p>}>
           <tech.icon
@@ -33,39 +50,119 @@ export default function TechStack() {
 
 const stacks = [
   {
-    id: 'nextjs',
-    icon: SiNextdotjs,
+    id: 'go',
+    icon: SiGo,
     tooltip: (
       <>
-        <CustomLink href='https://nextjs.org'>Next.js</CustomLink>, currently my
-        go-to framework because of the static generation, dynamic paths, and
-        built-in API. <em>ps: I like pages folder better than the new one.</em>
+        <CustomLink href=''>Go</CustomLink>
       </>
     ),
   },
   {
-    id: 'react',
-    icon: SiReact,
+    id: 'laravel',
+    icon: SiLaravel,
     tooltip: (
       <>
-        <CustomLink href='https://reactjs.org/'>React</CustomLink>, underlying
-        library of Next.js. I love the declarative approach and the ecosystem.
+        <CustomLink href=''>Laravel</CustomLink>
       </>
     ),
   },
   {
-    id: 'typescript',
-    icon: SiTypescript,
+    id: 'springboot',
+    icon: SiSpringboot,
     tooltip: (
       <>
-        <CustomLink href='https://www.typescriptlang.org/'>
-          TypeScript
-        </CustomLink>
-        , can't live without it! Check out my{' '}
-        <CustomLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
-          starter template
-        </CustomLink>{' '}
-        using Next.js, Tailwind CSS, and TypeScript.
+        <CustomLink href=''>SpringBoot</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'ansible',
+    icon: SiAnsible,
+    tooltip: (
+      <>
+        <CustomLink href=''>Ansible</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'prometheus',
+    icon: SiPrometheus,
+    tooltip: (
+      <>
+        <CustomLink href=''>Prometheus</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'loki',
+    icon: SiGrafana,
+    tooltip: (
+      <>
+        <CustomLink href=''>Grafana</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'otel',
+    icon: SiOpentelemetry,
+    tooltip: (
+      <>
+        <CustomLink href=''>Opentelemetry</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'linux',
+    icon: SiLinux,
+    tooltip: (
+      <>
+        <CustomLink href=''>Linux</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'gitlab',
+    icon: SiGitlab,
+    tooltip: (
+      <>
+        <CustomLink href=''>Gitlab</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'github',
+    icon: SiGithub,
+    tooltip: (
+      <>
+        <CustomLink href=''>Github</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'jaeger',
+    icon: SiJaeger,
+    tooltip: (
+      <>
+        <CustomLink href=''>Jaeger</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'redis',
+    icon: SiRedis,
+    tooltip: (
+      <>
+        <CustomLink href=''>Redis</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'mysql',
+    icon: SiMysql,
+    tooltip: (
+      <>
+        <CustomLink href=''>My SQL</CustomLink>
       </>
     ),
   },
@@ -85,26 +182,65 @@ const stacks = [
     ),
   },
   {
-    id: 'react-query',
-    icon: SiReactquery,
+    id: 'mongodb',
+    icon: SiMongodb,
     tooltip: (
       <>
-        <CustomLink href='https://tanstack.com/'>TanStack Query</CustomLink>,
-        great react hooks for data fetching and caching. I maintain most of my
-        API fetch (get, post, put, delete) in this library.
+        <CustomLink href=''>Mongo DB</CustomLink>
       </>
     ),
   },
   {
-    id: 'prisma',
-    icon: SiPrisma,
+    id: 'elastic',
+    icon: SiElasticsearch,
     tooltip: (
       <>
-        <CustomLink href='https://www.prisma.io/?via=clarence'>
-          Prisma
-        </CustomLink>
-        , great and simple ORM. A little bit of documentation and you're good to
-        go.
+        <CustomLink href=''>Elastic</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'docker',
+    icon: SiDocker,
+    tooltip: (
+      <>
+        <CustomLink href=''>Docker</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'vue',
+    icon: SiVuedotjs,
+    tooltip: (
+      <>
+        <CustomLink href=''>Vue</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'nuxt',
+    icon: SiNuxtdotjs,
+    tooltip: (
+      <>
+        <CustomLink href=''>Nuxt</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'react',
+    icon: SiReact,
+    tooltip: (
+      <>
+        <CustomLink href=''>React</CustomLink>
+      </>
+    ),
+  },
+  {
+    id: 'next',
+    icon: SiNextdotjs,
+    tooltip: (
+      <>
+        <CustomLink href=''>Next</CustomLink>
       </>
     ),
   },
